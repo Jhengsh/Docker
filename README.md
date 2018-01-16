@@ -9,3 +9,6 @@
 # Remove none TAG images
 docker rmi $(docker images -f "dangling=true" -q)
 ```
+
+## Docker-compose with Static IP
++ [Set specific IP addresses to docker containers created with docker-compose](https://blog.alejandrocelaya.com/2017/04/21/set-specific-ip-addresses-to-docker-containers-created-with-docker-compose/)
