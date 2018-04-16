@@ -8,6 +8,8 @@
 ```
 # Remove none TAG images
 docker rmi $(docker images -f "dangling=true" -q)
+docker-compose config --service
+
 ```
 
 ## Docker-compose with Static IP

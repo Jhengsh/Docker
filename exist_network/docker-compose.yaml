@@ -1,0 +1,10 @@
+version: "2"
+services:
+  jupyterhub:
+    image: jupyterhub/jupyterhub 
+    networks:
+      - exist_network
+networks:
+    exist_network:
+      external:
+        name: br0 
