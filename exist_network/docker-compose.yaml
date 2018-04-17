@@ -3,7 +3,9 @@ services:
   jupyterhub:
     image: jupyterhub/jupyterhub 
     networks:
-      - exist_network
+        # - exist_network # not assign static IP
+        exist_network:
+            ipv4_address: 172.28.5.1
 networks:
     exist_network:
       external:
